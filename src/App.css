@@ -1,0 +1,108 @@
+/* Light theme with custom color palette */
+.App {
+  overflow-x: hidden;
+  background-color: #f8fbfe;
+}
+
+/* Custom scrollbar - minimal light theme */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8fbfe;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(8, 17, 27, 0.2);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(8, 17, 27, 0.3);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+  background-color: #f8fbfe;
+}
+
+body {
+  background-color: #f8fbfe;
+  color: #08111b;
+}
+
+/* Custom animations for light theme */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-minimal {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+@keyframes rotate-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Subtle glow effects */
+.glow-minimal {
+  box-shadow: 0 0 20px rgba(54, 124, 221, 0.1);
+}
+
+.glow-primary {
+  box-shadow: 0 0 30px rgba(54, 124, 221, 0.2);
+}
+
+/* Grid patterns for subtle backgrounds */
+.grid-pattern {
+  background-image: 
+    linear-gradient(rgba(8, 17, 27, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(8, 17, 27, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.grid-pattern-subtle {
+  background-image: 
+    linear-gradient(rgba(8, 17, 27, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(8, 17, 27, 0.02) 1px, transparent 1px);
+  background-size: 30px 30px;
+}
+
+/* Selection colors for light theme */
+::selection {
+  background: rgba(54, 124, 221, 0.2);
+  color: #08111b;
+}
+
+::-moz-selection {
+  background: rgba(54, 124, 221, 0.2);
+  color: #08111b;
+}
+
+/* Focus states for accessibility */
+button:focus,
+input:focus,
+a:focus {
+  outline: 2px solid rgba(54, 124, 221, 0.3);
+  outline-offset: 2px;
+}
+
+/* Backdrop blur support */
+.backdrop-blur-subtle {
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* Custom shapes and borders */
+.border-subtle {
+  border-color: rgba(8, 17, 27, 0.1);
+}
+
+.border-hover {
+  border-color: rgba(8, 17, 27, 0.2);
+}
