@@ -41,7 +41,7 @@ const Footer = () => {
               <span className="block text-footer-text/80 font-light">to Life?</span>
             </h3>
             <p className="text-footer-text/80 text-lg max-w-2xl mx-auto font-light">
-              Stop imagining, start achieving. Let Bore'sOver turn your AI aspirations into tangible realities.
+              Stop imagining, start achieving. Let Bore&apos;sOver turn your AI aspirations into tangible realities.
             </p>
           </motion.div>
 
@@ -70,7 +70,7 @@ const Footer = () => {
                 <div className="w-8 h-8 bg-accent rounded-lg flex items-center justify-center">
                   <div className="w-4 h-4 bg-text rounded-sm"></div>
                 </div>
-                <span className="text-2xl font-bold text-footer-text">Bore'sOver</span>
+                <span className="text-2xl font-bold text-footer-text">Bore&apos;sOver</span>
               </div>
               <p className="text-footer-text/80 mb-8 max-w-sm mx-auto font-light">
                 Transform your enterprise with AI-powered workflow automation. 
@@ -99,7 +99,7 @@ const Footer = () => {
       <div className="border-t border-white/20 py-8 px-4">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <p className="text-footer-text/40 text-sm">
-            © 2025 Bore'sOver. All rights reserved.
+            © 2025 Bore&apos;sOver. All rights reserved.
           </p>
           
           <div className="flex items-center gap-8 mt-4 md:mt-0">

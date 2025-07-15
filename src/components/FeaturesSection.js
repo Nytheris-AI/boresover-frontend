@@ -35,7 +35,7 @@ const FeaturesSection = () => {
     {
       icon: Layers,
       title: "Enhanced Innovation",
-      description: "Unlock new possibilities and stay ahead of the curve. Our AI systems enable you to explore new business models and capabilities that weren't possible before.",
+      description: "Unlock new possibilities and stay ahead of the curve. Our AI systems enable you to explore new business models and capabilities that weren&apos;t possible before.",
       benefits: ["New capabilities", "Competitive edge", "Future-ready"],
       stats: "Innovation"
     }
@@ -74,11 +74,11 @@ const FeaturesSection = () => {
           className="text-center mb-20"
         >
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-text mb-6 tracking-tight">
-            How Bore'sOver
+            How Bore&apos;sOver
             <span className="block text-text/60 font-light">Transforms Businesses</span>
           </h2>
           <p className="text-xl text-text/60 max-w-3xl mx-auto font-light">
-            At Bore'sOver, we turn your AI aspirations into tangible realities. We specialize in tailored AI system implementation and automation solutions that redefine efficiency, spark innovation, and create sustainable growth.
+            At Bore&apos;sOver, we turn your AI aspirations into tangible realities. We specialize in tailored AI system implementation and automation solutions that redefine efficiency, spark innovation, and create sustainable growth.
           </p>
         </motion.div>
 

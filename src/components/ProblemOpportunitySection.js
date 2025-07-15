@@ -52,7 +52,7 @@ const ProblemOpportunitySection = () => {
             <span className="block text-text/60 font-light">with These Challenges?</span>
           </h2>
           <p className="text-xl text-text/60 max-w-3xl mx-auto font-light">
-            Don't get left behind. AI isn't just for tech giants anymore – it's a necessity for competitive advantage.
+            Don&apos;t get left behind. AI isn&apos;t just for tech giants anymore – it&apos;s a necessity for competitive advantage.
           </p>
         </motion.div>
 
@@ -137,7 +137,7 @@ const ProblemOpportunitySection = () => {
             onClick={scrollToContact}
             className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white font-semibold rounded-full hover:bg-primary/90 transition-colors"
           >
-            <span>Stop imagining, start achieving. Let Bore'sOver turn your AI aspirations into tangible realities.</span>
+            <span>Stop imagining, start achieving. Let Bore&apos;sOver turn your AI aspirations into tangible realities.</span>
             <ArrowRight className="w-5 h-5" />
           </motion.button>
         </motion.div>

@@ -76,15 +76,13 @@ export default function SocialProofSection() {
           <Sparkles className="w-5 h-5 text-primary" />
           <span className="text-primary font-medium">Next-Generation AI Solutions</span>
         </div>
-        <h2 className="text-5xl font-bold mb-4 text-text">
-          Why Choose{' '}
-          <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-            Bore'sOver?
-          </span>
-        </h2>
-        <p className="text-xl text-text/70 max-w-3xl mx-auto leading-relaxed">
-          Discover how Bore'sOver is poised to transform businesses with innovative AI solutions. Our vision-driven approach and cutting-edge methodology are designed to deliver exceptional value.
-        </p>
+        <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold text-text mb-6 tracking-tight">
+            Why Choose{' '}
+            <span className="text-primary">Bore&apos;sOver?</span>
+          </h2>
+          <p className="text-xl text-text/60 max-w-3xl mx-auto font-light">
+            Discover how Bore&apos;sOver is poised to transform businesses with innovative AI solutions. Our vision-driven approach and cutting-edge methodology are designed to deliver exceptional value.
+          </p>
       </div>
 
       {/* Key Metrics */}
@@ -139,7 +137,7 @@ export default function SocialProofSection() {
       <div className="mb-20">
         <div className="text-center mb-12">
           <h3 className="text-2xl font-bold text-text mb-4">Target Industries</h3>
-          <p className="text-text/60">Industries we're excited to revolutionize with AI innovation</p>
+          <p className="text-text/60">Industries we&apos;re excited to revolutionize with AI innovation</p>
         </div>
         <div className="flex flex-wrap justify-center gap-4">
           {industries.map((industry, index) => (
@@ -180,7 +178,7 @@ export default function SocialProofSection() {
           </div>
           <h3 className="text-3xl font-bold text-white mb-4">Success Stories in the Making</h3>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            We're preparing to partner with forward-thinking companies to create transformative AI success stories. Be among the first to experience the Bore'sOver difference.
+            We&apos;re preparing to partner with forward-thinking companies to create transformative AI success stories. Be among the first to experience the Bore&apos;sOver difference.
           </p>
         </div>
         <div className="grid md:grid-cols-2 gap-8">
@@ -196,14 +194,14 @@ export default function SocialProofSection() {
               </span>
             </div>
             <p className="text-gray-300 text-lg italic mb-6">
-              "Ready to be part of our first success story? Join our early adopter program and help shape the future of AI automation."
+              &ldquo;Ready to be part of our first success story? Join our early adopter program and help shape the future of AI automation.&rdquo;
             </p>
             <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-lg">N</span>
               </div>
               <div>
-                <div className="text-white font-semibold">Bore'sOver Team</div>
+                <div className="text-white font-semibold">Bore&apos;sOver Team</div>
                 <div className="text-gray-400 text-sm">Ready to Transform Your Business</div>
               </div>
             </div>
@@ -220,7 +218,7 @@ export default function SocialProofSection() {
               </span>
             </div>
             <p className="text-gray-300 text-lg italic mb-6">
-              "Looking for a technology partner that understands your vision? Let's build something extraordinary together."
+              &ldquo;Looking for a technology partner that understands your vision? Let&apos;s build something extraordinary together.&rdquo;
             </p>
             <div className="flex items-center space-x-4">
               <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-teal-500 rounded-full flex items-center justify-center">

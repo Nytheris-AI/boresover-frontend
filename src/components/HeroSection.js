@@ -97,7 +97,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-xl md:text-2xl text-text/70 mb-16 max-w-4xl mx-auto leading-relaxed font-light"
         >
-          Bore'sOver empowers companies of all sizes to seamlessly integrate cutting-edge AI and automation, transforming operations and driving growth.
+          Bore&apos;sOver empowers companies of all sizes to seamlessly integrate cutting-edge AI and automation, transforming operations and driving growth.
         </motion.p>
 
         <motion.div
