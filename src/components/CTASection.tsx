@@ -6,19 +6,19 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { ArrowRight, CheckCircle, Mail, Phone, Calendar, Workflow } from "lucide-react";
 
-const CTASection = () => {
-  const ref = useRef(null);
+const CTASection: React.FC = () => {
+  const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
-  const [email, setEmail] = useState("");
-  const [isSubmitted, setIsSubmitted] = useState(false);
+  const [email, setEmail] = useState<string>("");
+  const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
     setIsSubmitted(true);
     setTimeout(() => setIsSubmitted(false), 3000);
   };
 
-  const scrollToContact = () => {
+  const scrollToContact = (): void => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
       contactSection.scrollIntoView({ 
@@ -140,35 +140,6 @@ const CTASection = () => {
                     </motion.button>
                   </div>
                 </motion.form>
-
-                {/* Contact Options
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-                  {[
-                    { icon: Calendar, title: "Book a Demo", subtitle: "See it in action", action: "Schedule 15-min demo", cta: "Book Now" },
-                    { icon: Phone, title: "Talk to Sales", subtitle: "Custom solutions", action: "+1 (555) 123-4567", cta: "Call Now" },
-                    { icon: Mail, title: "Email Us", subtitle: "Quick questions", action: "hello@boresover.com", cta: "Send Email" }
-                  ].map((contact, index) => (
-                    <motion.div
-                      key={index}
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={isInView ? { opacity: 1, y: 0 } : {}}
-                      transition={{ duration: 0.6, delay: 0.6 + index * 0.1 }}
-                      whileHover={{ y: -2 }}
-                      onClick={scrollToContact}
-                      className="p-4 md:p-6 bg-white/30 border border-text/10 rounded-xl hover:bg-white/50 hover:border-primary/30 transition-all duration-300 cursor-pointer group"
-                    >
-                      <contact.icon className="w-5 h-5 md:w-6 md:h-6 text-primary/60 mb-3 md:mb-4 group-hover:text-primary transition-colors" />
-                      <h3 className="text-text font-medium mb-1 md:mb-2 text-sm md:text-base">{contact.title}</h3>
-                      <p className="text-text/60 text-xs md:text-sm mb-2 md:mb-3">{contact.subtitle}</p>
-                      <div className="text-text/70 text-xs md:text-sm mb-2 md:mb-3 font-mono">
-                        {contact.action}
-                      </div>
-                      <div className="text-primary text-xs md:text-sm font-medium group-hover:text-primary/80 transition-colors">
-                        {contact.cta} →
-                      </div>
-                    </motion.div>
-                  ))}
-                </div> */}
               </div>
             </div>
           </div>
@@ -179,3 +150,4 @@ const CTASection = () => {
 };
 
 export default CTASection;
+

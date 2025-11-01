@@ -4,12 +4,18 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Github, Twitter, Linkedin, Mail, ArrowUp, ArrowRight } from "lucide-react";
 
-const Footer = () => {
-  const scrollToTop = () => {
+interface SocialLink {
+  icon: React.ComponentType<{ className?: string }>;
+  href: string;
+  label: string;
+}
+
+const Footer: React.FC = () => {
+  const scrollToTop = (): void => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const scrollToContact = () => {
+  const scrollToContact = (): void => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
       contactSection.scrollIntoView({ 
@@ -19,9 +25,7 @@ const Footer = () => {
     }
   };
 
-
-
-  const socialLinks = [
+  const socialLinks: SocialLink[] = [
     { icon: Mail, href: "mailto:hello@boresover.com", label: "Email" }
   ];
 
@@ -125,3 +129,4 @@ const Footer = () => {
 };
 
 export default Footer;
+

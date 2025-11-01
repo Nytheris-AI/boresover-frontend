@@ -6,11 +6,11 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { AlertTriangle, Lightbulb, TrendingUp, Zap, ArrowRight } from "lucide-react";
 
-const ProblemOpportunitySection = () => {
-  const ref = useRef(null);
+const ProblemOpportunitySection: React.FC = () => {
+  const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const scrollToContact = () => {
+  const scrollToContact = (): void => {
     const contactSection = document.getElementById('contact');
     if (contactSection) {
       contactSection.scrollIntoView({ 
@@ -20,7 +20,7 @@ const ProblemOpportunitySection = () => {
     }
   };
 
-  const problems = [
+  const problems: string[] = [
     "Manual processes slowing down operations",
     "High operational costs eating into profits",
     "Data scattered across multiple systems",
@@ -29,7 +29,7 @@ const ProblemOpportunitySection = () => {
     "Inefficient workflows causing bottlenecks"
   ];
 
-  const opportunities = [
+  const opportunities: string[] = [
     "Streamlined operations that scale effortlessly",
     "Data-driven insights for smarter decisions",
     "Automated workflows that work 24/7",
@@ -146,4 +146,5 @@ const ProblemOpportunitySection = () => {
   );
 };
 
-export default ProblemOpportunitySection; 
+export default ProblemOpportunitySection;
+

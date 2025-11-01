@@ -19,7 +19,14 @@ import {
   Clock
 } from 'lucide-react';
 
-const industries = [
+interface ValueProp {
+  icon: React.ComponentType<{ className?: string }>;
+  color: string;
+  title: string;
+  desc: string;
+}
+
+const industries: string[] = [
   'Financial Services',
   'Healthcare',
   'Manufacturing',
@@ -28,7 +35,7 @@ const industries = [
   'Logistics'
 ];
 
-const valueProps = [
+const valueProps: ValueProp[] = [
   {
     icon: Users,
     color: 'from-blue-500 to-blue-600',
@@ -67,7 +74,7 @@ const valueProps = [
   }
 ];
 
-export default function SocialProofSection() {
+const SocialProofSection: React.FC = () => {
   return (
     <section className="py-20 px-6 max-w-7xl mx-auto bg-background">
       {/* Header */}
@@ -140,11 +147,10 @@ export default function SocialProofSection() {
           <p className="text-text/60">Industries we&apos;re excited to revolutionize with AI innovation</p>
         </div>
         <div className="flex flex-wrap justify-center gap-4">
-          {industries.map((industry, index) => (
+          {industries.map((industry) => (
             <div
               key={industry}
               className="bg-gradient-to-r from-white/50 to-white/70 backdrop-blur-sm rounded-full px-6 py-3 border border-text/20 hover:border-primary/30 transition-all duration-300 hover:scale-105 shadow-sm"
-              style={{ animationDelay: `${index * 100}ms` }}
             >
               <span className="text-text font-medium">{industry}</span>
             </div>
@@ -154,7 +160,7 @@ export default function SocialProofSection() {
 
       {/* Value Propositions */}
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
-        {valueProps.map((prop, i) => (
+        {valueProps.map((prop) => (
           <div className="group" key={prop.title}>
             <div className={`bg-gradient-to-br from-gray-800/50 to-gray-900/50 rounded-2xl p-8 border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 hover:scale-105 h-full`}>
               <div className="flex items-center space-x-4 mb-6">
@@ -258,4 +264,7 @@ export default function SocialProofSection() {
       </div>
     </section>
   );
-}
+};
+
+export default SocialProofSection;
+

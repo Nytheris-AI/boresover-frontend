@@ -4,7 +4,20 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Settings, Code, TrendingUp, ArrowRight, CheckCircle, Shield, Clock, ExternalLink } from "lucide-react";
 
-const steps = [
+interface Step {
+  icon: React.ComponentType<{ className?: string }>;
+  color: string;
+  step: string;
+  title: string;
+  desc: string;
+}
+
+interface Feature {
+  color: string;
+  text: string;
+}
+
+const steps: Step[] = [
   {
     icon: Settings,
     color: "bg-blue-600",
@@ -28,13 +41,13 @@ const steps = [
   }
 ];
 
-const features = [
+const features: Feature[] = [
   { color: "bg-green-500", text: "99.9% uptime guarantee" },
   { color: "bg-blue-500", text: "Enterprise security & compliance" },
   { color: "bg-purple-500", text: "24/7 monitoring & support" }
 ];
 
-export default function TechnologyShowcase() {
+const TechnologyShowcase: React.FC = () => {
   return (
     <section className="py-12 md:py-20 px-4 md:px-6 max-w-7xl mx-auto bg-background">
       <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
@@ -219,4 +232,7 @@ export default function TechnologyShowcase() {
       </div>
     </section>
   );
-}
+};
+
+export default TechnologyShowcase;
+

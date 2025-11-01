@@ -6,11 +6,19 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { GitBranch, Zap, ArrowUpRight, Layers, ArrowRight } from "lucide-react";
 
-const FeaturesSection = () => {
-  const ref = useRef(null);
+interface Feature {
+  icon: React.ComponentType<{ className?: string }>;
+  title: string;
+  description: string;
+  benefits: string[];
+  stats: string;
+}
+
+const FeaturesSection: React.FC = () => {
+  const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const features = [
+  const features: Feature[] = [
     {
       icon: GitBranch,
       title: "Increased Efficiency & Productivity",
@@ -142,3 +150,4 @@ const FeaturesSection = () => {
 };
 
 export default FeaturesSection;
+

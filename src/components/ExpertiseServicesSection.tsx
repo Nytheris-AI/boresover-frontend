@@ -6,11 +6,18 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { Cpu, Settings, Database, TrendingUp, Code, Zap } from "lucide-react";
 
-const ExpertiseServicesSection = () => {
-  const ref = useRef(null);
+interface Service {
+  icon: React.ComponentType<{ className?: string }>;
+  title: string;
+  description: string;
+  color: string;
+}
+
+const ExpertiseServicesSection: React.FC = () => {
+  const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const services = [
+  const services: Service[] = [
     {
       icon: Cpu,
       title: "Custom AI Development",
@@ -116,4 +123,5 @@ const ExpertiseServicesSection = () => {
   );
 };
 
-export default ExpertiseServicesSection; 
+export default ExpertiseServicesSection;
+
